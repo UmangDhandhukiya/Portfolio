@@ -32,7 +32,7 @@ const Navbar = () => {
       </ul>
 
       <button className="hidden md:block h-9 px-4 border rounded-md font-normal hover:bg-white hover:text-black transition">
-        Hire Me!
+        <a href="#contact">Hire Me!</a>
       </button>
 
       <div className="md:hidden">
@@ -55,7 +55,7 @@ const Navbar = () => {
             </li>
           ))}
           <button className="h-9 px-4 border rounded-md hover:bg-white hover:text-black transition">
-            Hire Me!
+            <a href="#contact">Hire Me!</a>
           </button>
         </div>
       )}

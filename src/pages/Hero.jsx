@@ -94,7 +94,7 @@ const Hero = () => {
           <div className="w-full lg:w-1/3 flex justify-center">
             <img
               className="h-40 w-40 sm:h-48 sm:w-48 md:h-56 md:w-56 lg:h-64 lg:w-64 rounded-full border-4 md:border-8 border-white object-cover"
-              src="/public/avtar.png"
+              src="/avtar.png"
               alt="Avatar"
             />
           </div>
@@ -110,9 +110,9 @@ const Hero = () => {
               problem-solving abilities to real-world projects.
             </p>
 
-            <button className="h-10 bg-gray-600 px-6 mt-4 hover:text-black text-white rounded-md">
-              Download CV
-            </button>
+            <button className="h-10 bg-gray-600 px-6 mt-4 hover:text-black text-white rounded-md" 
+            onClick={() => { window.open('/Umang_Resume.pdf', '_blank')}}>Download Cv</button>
+
           </div>
         </div>
       </div>
