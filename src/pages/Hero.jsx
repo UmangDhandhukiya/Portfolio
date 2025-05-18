@@ -135,11 +135,11 @@ const Hero = () => {
           </div>
           <div className="w-full lg:w-2/3 p-4 sm:p-6 md:p-10 text-sm sm:text-base">
             <p>
-              I am Umang Dhandhukiya, passionate about technology and innovation.
-              As a software developer, I create intuitive, user-friendly
-              interfaces with a strong focus on responsive design and
-              performance optimization. Proficient in HTML, CSS, JavaScript, and
-              React JS. I am eager to apply my technical skills and problem
+              I am Umang Dhandhukiya, passionate about technology and
+              innovation. As a software developer, I create intuitive,
+              user-friendly interfaces with a strong focus on responsive design
+              and performance optimization. Proficient in HTML, CSS, JavaScript,
+              and React JS. I am eager to apply my technical skills and problem
               solving to real-world projects.
             </p>
 
@@ -264,35 +264,39 @@ const Hero = () => {
       <hr className="border-gray-700 w-full" />
 
       {/* Projects */}
-      <section
+      <div
         id="project"
-        className="w-full py-16 px-4 flex flex-col items-center bg-black max-w-7xl mx-auto"
+        className="w-full flex flex-col justify-evenly items-center bg-black py-16 px-4"
       >
-        <h1 className="text-3xl font-bold mb-12 text-white">My Projects</h1>
+        <h1 className="text-white text-3xl font-bold mb-8">Project Gallery</h1>
 
-        <div className="flex flex-wrap justify-center gap-10 max-w-5xl">
-          {project.map((proj, idx) => (
-            <a
-              key={idx}
-              href={proj.path}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="max-w-xs w-full bg-neutral-900 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-neutral-800 hover:border-white"
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {project.map((proj, index) => (
+            <div
+              key={index}
+              className="relative rounded-2xl border-2 border-white backdrop-blur-xl shadow-lg hover:shadow-2xl transition-transform duration-300 hover:scale-105 p-4"
             >
               <img
-                className="w-full h-48 object-cover"
                 src={proj.image}
                 alt={proj.title}
+                className="w-full h-48 object-cover rounded-xl mb-4"
               />
-              <div className="p-4">
-                <h2 className="text-lg font-semibold text-white text-center">
-                  {proj.title}
-                </h2>
+
+              <div className="flex flex-col justify-between h-28 text-white">
+                <h3 className="text-lg font-semibold">{proj.title}</h3>
+                <a
+                  href={proj.path}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block text-center px-4 py-2 bg-white/30 text-white border border-white rounded-lg text-sm hover:bg-white hover:text-black transition"
+                >
+                  Live Demo
+                </a>
               </div>
-            </a>
+            </div>
           ))}
         </div>
-      </section>
+      </div>
     </div>
   );
 };
