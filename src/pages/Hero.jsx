@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -96,7 +96,7 @@ const Hero = () => {
             className="parallax-item text-[40px] sm:text-[50px] uppercase font-bold tracking-[10px] sm:tracking-[20px] md:tracking-[28px] lg:tracking-[32px] leading-tight sm:leading-[50px] md:leading-[60px] text-center"
             data-value="3"
           >
-            Hello I'm
+            Hello I am
             <br />
             <span className="text-[20px] sm:text-[30px] md:text-[34px] font-medium tracking-[4px] sm:tracking-[6px] md:tracking-[8px] lg:tracking-[10px]">
               Umang Dhandhukiya
@@ -135,7 +135,7 @@ const Hero = () => {
           </div>
           <div className="w-full lg:w-2/3 p-4 sm:p-6 md:p-10 text-sm sm:text-base">
             <p>
-              I'm Umang Dhandhukiya, passionate about technology and innovation.
+              I am Umang Dhandhukiya, passionate about technology and innovation.
               As a software developer, I create intuitive, user-friendly
               interfaces with a strong focus on responsive design and
               performance optimization. Proficient in HTML, CSS, JavaScript, and
