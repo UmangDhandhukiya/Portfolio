@@ -51,6 +51,11 @@ const Hero = () => {
       path: "https://music-player-react-indol.vercel.app/",
       image: "/music.png",
     },
+    {
+      title: "Black-Jack-Game",
+      path: "https://black-jack-game-js-mu.vercel.app/",
+      image: "/bj.png",
+    },
   ];
 
   const educationData = [
@@ -76,7 +81,7 @@ const Hero = () => {
         "Studied core commerce subjects including accountancy, economics, and business studies. Gained a strong foundation in financial and commercial principles.",
     },
     {
-      degree: "Secondary School Certificate (10th)",
+      degree: "Matriculation",
       college: "J.V. Vidhyalay",
       year: "2018 - 2019",
       description:
@@ -296,6 +301,67 @@ const Hero = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Contact */}
+      <div
+        id="contact"
+        className="w-full py-16 px-4 flex flex-col items-center bg-black max-w-4xl mx-auto"
+      >
+        <h1 className="text-3xl font-bold mb-6 text-white">Contact</h1>
+        <p className="text-gray-300 mb-4 text-center">
+          If you'd like to connect, collaborate, or hire me — feel free to reach
+          out!
+        </p>
+
+        {/* Contact Form */}
+        <form className="w-full max-w-md space-y-4 text-white">
+          <div>
+            <label className="block text-sm font-medium mb-1" htmlFor="name">
+              Name
+            </label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              required
+              placeholder="Your name"
+              className="w-full px-4 py-2 rounded-md bg-gray-800 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium mb-1" htmlFor="email">
+              Email
+            </label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              placeholder="Your email"
+              className="w-full px-4 py-2 rounded-md bg-gray-800 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium mb-1" htmlFor="message">
+              Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              required
+              placeholder="Your message"
+              className="w-full px-4 py-2 rounded-md bg-gray-800 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            className="w-full py-2 px-4 bg-gray-500 hover:bg-gray-600 transition rounded-md font-semibold"
+          >
+            Send Message
+          </button>
+        </form>
       </div>
     </div>
   );
